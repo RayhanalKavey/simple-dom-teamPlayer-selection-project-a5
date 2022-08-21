@@ -200,15 +200,21 @@
             <div class="grid grid-cols-2 place-content-evenly">
               <p class="justify-self-start pl-8">Per Player</p>
               <div class="">
-                <input type="text" class="w-20 text px-2" />
+                <input
+                  id="per-player-cost"
+                  type="text"
+                  class="w-20 text px-2"
+                />
               </div>
             </div>
             <!-- Per Player end -->
             <!-- btn -->
-            <button class="w-4/5 mx-auto py-2 btn-primary">Calculate</button>
+            <button id="player-expenses" class="w-4/5 mx-auto py-2 btn-primary">
+              Calculate
+            </button>
             <!-- Player expense start -->
             <div class="grid grid-cols-2 place-content-evenly">
-              <p class="justify-self-start pl-8">Total Expenses</p>
+              <p class="justify-self-start pl-8">Player Expenses</p>
               <div class="">0</div>
             </div>
             <!-- Player expense end -->
@@ -216,7 +222,7 @@
             <div class="grid grid-cols-2 place-content-evenly">
               <p class="justify-self-start pl-8">Manager</p>
               <div class="">
-                <input type="text" class="w-20 text px-2" />
+                <input id="manager-cost" type="text" class="w-20 text px-2" />
               </div>
             </div>
             <!-- Manager expense end -->
@@ -224,14 +230,19 @@
             <div class="grid grid-cols-2 place-content-evenly">
               <p class="justify-self-start pl-8">Coach</p>
               <div class="">
-                <input type="text" class="w-20 text px-2" />
+                <input id="coach-cost" type="text" class="w-20 text px-2" />
               </div>
             </div>
             <!-- Coach expense end -->
             <!-- btn -->
-            <button class="w-4/5 mx-auto py-2 btn-primary">Calculate</button>
+            <button id="total-expenses" class="w-4/5 mx-auto py-2 btn-primary">
+              Calculate
+            </button>
             <!-- total expense start -->
-            <div class="grid grid-cols-2 place-content-evenly">
+            <div
+              id="total-expenses"
+              class="grid grid-cols-2 place-content-evenly"
+            >
               <p class="justify-self-start pl-8">Total Expenses</p>
               <div class="">0</div>
             </div>
@@ -245,5 +256,7 @@
     </main>
     <!-- Js links -->
     <script src="js/utility.js"></script>
+    <script src="js/select5.js"></script>
+    <script src="js/budget.js"></script>
   </body>
 </html>
