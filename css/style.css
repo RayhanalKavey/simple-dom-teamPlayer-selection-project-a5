@@ -4,5 +4,20 @@
   box-sizing: border-box;
 }
 body {
+  background-color: #40474e;
   font-family: "Lora", serif;
+  color: #e8e9e9;
+}
+.header-text {
+  color: #ff5e19;
+}
+.header {
+  background-color: black;
+  font-family: "DynaPuff", cursive;
+}
+.card-section-background {
+  background-color: #40474e;
+}
+.card-background {
+  background-color: black;
 }

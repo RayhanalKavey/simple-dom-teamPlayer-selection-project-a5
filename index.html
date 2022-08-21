@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football-Club Team Management</title>
-    <!--Font -->
+    <!--Font DynaPuff-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Lora -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap"
       rel="stylesheet"
     />
-    <!-- css styles -->
-    <link rel="stylesheet" href="css/style.css" />
     <!-- Daisyui teilwind css component library -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
@@ -22,10 +27,104 @@
     />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css styles -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header><h1>Football-Club Team Management</h1></header>
-    <main></main>
+    <header>
+      <div class="header grid grid-cols-5">
+        <div>
+          <img src="img/embapey.png" alt="" />
+        </div>
+        <div
+          class="text-center col-span-3 flex grow flex-col justify-center items-center"
+        >
+          <h1 class="text-5xl mb-5 header-text">
+            Football-Club Team Management
+          </h1>
+          <p>
+            Assessment for the top five players in terms of the cost for our
+            team. We have calculated the top five players' management costs over
+            the year.
+          </p>
+        </div>
+        <div class="justify-self-end flex self-end">
+          <img src="img/Rectangle 57.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main
+      class="grid grid-cols-4 .card-section-background gap-4 w-11/12 mx-auto"
+    >
+      <!-- Card column start -->
+      <section class="col-span-3 grid grid-cols-3 gap-4 py-12">
+        <!-- Card-1 start-->
+        <div class="shadow-xl card-background">
+          <figure>
+            <img
+              class="w-full h-52"
+              src="img/lionel-messi-card.jpeg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="text-center p-6">
+            <h2 class="text-xl text-cener mb-5">Lionel Messi</h2>
+            <p class="flex gap-3 justify-center mb-4">
+              <span>Goals:36</span> Assists:120
+            </p>
+            <div class="card-actions justify-end">
+              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-1 end-->
+        <!-- Card-2 start-->
+        <div class="shadow-xl card-background">
+          <figure>
+            <img
+              class="w-full h-52"
+              src="img/neymar-jr-card.jpeg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="text-center p-6">
+            <h2 class="text-xl text-cener mb-5">Lionel Messi</h2>
+            <p class="flex gap-3 justify-center mb-4">
+              <span>Goals:36</span> Assists:120
+            </p>
+            <div class="card-actions justify-end">
+              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card-2 end-->
+        <!-- Card-3 start-->
+        <div class="shadow-xl card-background">
+          <figure>
+            <img
+              class="w-full h-52"
+              src="img/kylian-mbappe-card.jpeg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="text-center p-6">
+            <h2 class="text-xl text-cener mb-5">Lionel Messi</h2>
+            <p class="flex gap-3 justify-center mb-4">
+              <span>Goals:36</span> Assists:120
+            </p>
+            <div class="card-actions justify-end">
+              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card-3 end-->
+      </section>
+      <!-- Card column end -->
+      <!-- Calculation column start -->
+      <aside class="bg-black-400">09</aside>
+      <!-- Calculation column end -->
+    </main>
     <!-- Js links -->
     <script src="js/utility.js"></script>
   </body>
