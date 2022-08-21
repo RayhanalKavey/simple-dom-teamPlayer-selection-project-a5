@@ -119,6 +119,67 @@
           </div>
         </div>
         <!-- Card-3 end-->
+        <!-- Card-4 start-->
+        <div class="shadow-xl self-start card-background">
+          <figure>
+            <img
+              class="w-full h-52"
+              src="img/lionel-messi-card.jpeg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="text-center p-6">
+            <h2 class="text-xl text-cener mb-5">Lionel Messi</h2>
+            <p class="flex gap-3 justify-center mb-4">
+              <span>Goals:36</span> Assists:120
+            </p>
+            <div class="card-actions justify-end">
+              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card-4 end-->
+        <!-- Card-5 start-->
+        <div class="shadow-xl self-start card-background">
+          <figure>
+            <img
+              class="w-full h-52"
+              src="img/neymar-jr-card.jpeg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="text-center p-6">
+            <h2 class="text-xl text-cener mb-5">Neymar Junion</h2>
+            <p class="flex gap-3 justify-center mb-4">
+              <span>Goals:28</span> Assists:112
+            </p>
+            <div class="card-actions justify-end">
+              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card-5 end-->
+        <!-- Card-6 start-->
+        <div class="shadow-xl self-start card-background">
+          <figure>
+            <img
+              class="w-full h-52"
+              src="img/kylian-mbappe-card.jpeg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="text-center p-6">
+            <h2 class="text-xl text-cener mb-5">Kylian Mbappe</h2>
+            <p class="flex gap-3 justify-center mb-4">
+              <span>Goals:24</span> Assists:103
+            </p>
+            <div class="card-actions justify-end">
+              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card-6 end-->
       </section>
       <!-- Card column end -->
       <!-- Calculation column start -->
@@ -126,8 +187,57 @@
         <aside
           class="flex flex-col justify-center text-center gap-4 py-12 h-full"
         >
-          <div class="card-background test h-96">Selected-5</div>
-          <div class="card-background test h-96">Budget</div>
+          <!-- Selected player start-->
+          <div class="card-background h-96 pt-4">
+            <h2 class="text-xl mb-3">Selected-5</h2>
+          </div>
+          <!-- Selected player end -->
+
+          <!-- Budget Calculation start-->
+          <div class="card-background h-96 flex flex-col pt-4 gap-4">
+            <h2 class="text-xl mb-3">Budget</h2>
+            <!-- Per Player start -->
+            <div class="grid grid-cols-2 place-content-evenly">
+              <p class="justify-self-start pl-8">Per Player</p>
+              <div class="">
+                <input type="text" class="w-20 text px-2" />
+              </div>
+            </div>
+            <!-- Per Player end -->
+            <!-- btn -->
+            <button class="w-4/5 mx-auto py-2 btn-primary">Calculate</button>
+            <!-- Player expense start -->
+            <div class="grid grid-cols-2 place-content-evenly">
+              <p class="justify-self-start pl-8">Total Expenses</p>
+              <div class="">0</div>
+            </div>
+            <!-- Player expense end -->
+            <!-- Manager expense start -->
+            <div class="grid grid-cols-2 place-content-evenly">
+              <p class="justify-self-start pl-8">Manager</p>
+              <div class="">
+                <input type="text" class="w-20 text px-2" />
+              </div>
+            </div>
+            <!-- Manager expense end -->
+            <!-- Coach expense start -->
+            <div class="grid grid-cols-2 place-content-evenly">
+              <p class="justify-self-start pl-8">Coach</p>
+              <div class="">
+                <input type="text" class="w-20 text px-2" />
+              </div>
+            </div>
+            <!-- Coach expense end -->
+            <!-- btn -->
+            <button class="w-4/5 mx-auto py-2 btn-primary">Calculate</button>
+            <!-- total expense start -->
+            <div class="grid grid-cols-2 place-content-evenly">
+              <p class="justify-self-start pl-8">Total Expenses</p>
+              <div class="">0</div>
+            </div>
+            <!-- total expense end -->
+          </div>
+          <!-- Budget Calculation end -->
         </aside>
       </div>
 
