@@ -13,6 +13,7 @@ document
     setElementValueByID("player-expenses", playerExpenses);
     document.getElementById("total-expenses-btn").removeAttribute("disabled");
   });
+// ---------------------------
 //Calculate total expense button
 document
   .getElementById("total-expenses-btn")
@@ -30,3 +31,4 @@ document
     const totalCost = playerExpenses + managerCost + coachCost;
     setElementValueByID("total-expenses", totalCost);
   });
+//----------------------------------

@@ -24,3 +24,7 @@ body {
 .card-background {
   background-color: black;
 }
+hr,
+.footer-text {
+  color: #b9b9b9;
+}
