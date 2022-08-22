@@ -32,23 +32,25 @@
   </head>
   <body>
     <header>
-      <div class="header grid grid-cols-5">
+      <div class="header grid grid-cols-4 sm:grid-cols-5">
         <div>
           <img src="img/embapey.png" alt="" />
         </div>
         <div
-          class="text-center col-span-3 flex flex-col justify-center items-center"
+          class="sm:text-center col-span-3 flex flex-col justify-center sm:items-center py-2"
         >
-          <h1 class="text-5xl mb-5 header-text">
+          <h1
+            class="text-lg sm:text-2xl md:text-4xl lg:text-4xl xl:text-5xl mb-5 header-text"
+          >
             Football-Club Team Management
           </h1>
-          <p>
+          <p class="text-xs sm:text-sm lg:text-base xl:text-lg">
             Assessment for the top five players in terms of the cost for our
             team. We have calculated the top five players' management costs over
             the year.
           </p>
         </div>
-        <div class="justify-self-end flex self-end relative">
+        <div class="hidden sm:block justify-self-end flex self-end relative">
           <img
             class="absolute bottom-0 right-0"
             src="img/Rectangle 57.png"
@@ -59,10 +61,12 @@
       </div>
     </header>
     <main
-      class="grid grid-cols-4 .card-section-background gap-4 w-11/12 mx-auto mb-12"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 .card-section-background gap-4 w-8/12 sm:w-11/12 mx-auto mb-12"
     >
       <!-- Card column start -->
-      <section class="col-span-3 grid grid-cols-3 gap-4 py-12">
+      <section
+        class="sm:col-span-1 md:col-span-2 lg:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-4 py-12"
+      >
         <!-- Card-1 start-->
         <div class="shadow-xl self-start card-background">
           <figure>
@@ -73,7 +77,7 @@
             />
           </figure>
           <div class="text-center p-6">
-            <h2 class="text-xl text-cener mb-5">Lionel Messi</h2>
+            <h2 class="text-lg sm:text-xl text-cener mb-5">Lionel Messi</h2>
             <p class="flex gap-3 justify-center mb-4">
               <span>Goals:36</span> Assists:120
             </p>
@@ -99,7 +103,7 @@
             />
           </figure>
           <div class="text-center p-6">
-            <h2 class="text-xl text-cener mb-5">Neymar Junion</h2>
+            <h2 class="text-lg sm:text-xl text-cener mb-5">Neymar Junion</h2>
             <p class="flex gap-3 justify-center mb-4">
               <span>Goals:28</span> Assists:112
             </p>
@@ -124,7 +128,7 @@
             />
           </figure>
           <div class="text-center p-6">
-            <h2 class="text-xl text-cener mb-5">Kylian Mbappe</h2>
+            <h2 class="text-lg sm:text-xl text-cener mb-5">Kylian Mbappe</h2>
             <p class="flex gap-3 justify-center mb-4">
               <span>Goals:24</span> Assists:103
             </p>
@@ -149,7 +153,7 @@
             />
           </figure>
           <div class="text-center p-6">
-            <h2 class="text-xl text-cener mb-5">Sergio Ramos</h2>
+            <h2 class="text-lg sm:text-xl text-cener mb-5">Sergio Ramos</h2>
             <p class="flex gap-3 justify-center mb-4">
               <span>Goals:12</span> Assists:56
             </p>
@@ -175,7 +179,9 @@
             />
           </figure>
           <div class="text-center p-6">
-            <h2 class="text-xl text-cener mb-5">Zalatan Ibrahimovic</h2>
+            <h2 class="text-lg sm:text-xl text-cener mb-5">
+              Zalatan Ibrahimovic
+            </h2>
             <p class="flex gap-3 justify-center mb-4">
               <span>Goals:31</span> Assists:119
             </p>
@@ -200,7 +206,7 @@
             />
           </figure>
           <div class="text-center p-6">
-            <h2 class="text-xl text-cener mb-5">Mohamed Salah</h2>
+            <h2 class="text-lg sm:text-xl text-cener mb-5">Mohamed Salah</h2>
             <p class="flex gap-3 justify-center mb-4">
               <span>Goals:32</span> Assists:121
             </p>
@@ -225,7 +231,7 @@
             />
           </figure>
           <div class="text-center p-6">
-            <h2 class="text-xl text-cener mb-5">Angel Di Maria</h2>
+            <h2 class="text-lg sm:text-xl text-cener mb-5">Angel Di Maria</h2>
             <p class="flex gap-3 justify-center mb-4">
               <span>Goals:21</span> Assists:123
             </p>
@@ -250,7 +256,7 @@
             />
           </figure>
           <div class="text-center p-6">
-            <h2 class="text-xl text-cener mb-5">Julian Draxler</h2>
+            <h2 class="text-lg sm:text-xl text-cener mb-5">Julian Draxler</h2>
             <p class="flex gap-3 justify-center mb-4">
               <span>Goals:11</span> Assists:99
             </p>
@@ -270,7 +276,7 @@
       <!-- Calculation column start -->
       <div class="self-start">
         <aside
-          class="flex flex-col justify-center text-center gap-4 py-12 h-full"
+          class="flex flex-col justify-center text-center gap-4 py-12 lg:w-full"
         >
           <!-- Selected player start-->
           <div class="card-background h-96 pt-4">
@@ -284,12 +290,14 @@
           <!-- Selected player end -->
 
           <!-- Budget Calculation start-->
-          <div class="card-background h-96 flex flex-col pt-4 gap-4">
+          <div class="card-background budget flex flex-col pt-4 gap-4">
             <h2 class="text-xl mb-3">Budget</h2>
             <!-- Per Player start -->
-            <div class="grid grid-cols-2 place-content-evenly">
-              <p class="justify-self-start pl-8">Per Player</p>
-              <div class="">
+            <div
+              class="text-sm sm:text-lg grid grid-cols-2 place-content-evenly"
+            >
+              <p class="justify-self-start pl-6">Per Player</p>
+              <div>
                 <input
                   id="per-player-cost"
                   type="text"
@@ -301,27 +309,33 @@
             <!-- btn -->
             <button
               id="player-expenses-btn"
-              class="w-4/5 mx-auto py-2 btn-primary"
+              class="text-sm sm:text-lg w-4/5 mx-auto py-2 btn-primary"
             >
               Calculate
             </button>
             <!-- Player expense start -->
-            <div class="grid grid-cols-2 place-content-evenly">
-              <p class="justify-self-start pl-8">Player Expenses</p>
+            <div
+              class="text-sm sm:text-lg grid grid-cols-2 place-content-evenly"
+            >
+              <p class="justify-self-start pl-6">Player Expenses</p>
               <div>$<span id="player-expenses">0</span></div>
             </div>
             <!-- Player expense end -->
             <!-- Manager expense start -->
-            <div class="grid grid-cols-2 place-content-evenly">
-              <p class="justify-self-start pl-8">Manager</p>
+            <div
+              class="text-sm sm:text-lg grid grid-cols-2 place-content-evenly"
+            >
+              <p class="justify-self-start pl-6">Manager</p>
               <div class="">
                 <input id="manager-cost" type="text" class="w-20 text px-2" />
               </div>
             </div>
             <!-- Manager expense end -->
             <!-- Coach expense start -->
-            <div class="grid grid-cols-2 place-content-evenly">
-              <p class="justify-self-start pl-8">Coach</p>
+            <div
+              class="text-sm sm:text-lg grid grid-cols-2 place-content-evenly"
+            >
+              <p class="justify-self-start pl-6">Coach</p>
               <div class="">
                 <input id="coach-cost" type="text" class="w-20 text px-2" />
               </div>
@@ -330,14 +344,16 @@
             <!-- btn -->
             <button
               id="total-expenses-btn"
-              class="w-4/5 mx-auto py-2 btn-primary"
+              class="text-sm sm:text-lg w-4/5 mx-auto py-2 btn-primary"
               disabled
             >
               Calculate
             </button>
             <!-- total expense start -->
-            <div class="grid grid-cols-2 place-content-evenly">
-              <p class="justify-self-start pl-8">Total Expenses</p>
+            <div
+              class="text-sm sm:text-lg grid grid-cols-2 place-content-evenly"
+            >
+              <p class="justify-self-start pl-6">Total Expenses</p>
               <div>$<span id="total-expenses">0</span></div>
             </div>
             <!-- total expense end -->

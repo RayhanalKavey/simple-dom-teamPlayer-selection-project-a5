@@ -19,6 +19,7 @@ function addToSelectionBox(element) {
   const countPlayers = cardArray.length;
   if (countPlayers <= 5) {
     setElementValueByID("total-selection", countPlayers);
+    element.style.backgroundColor = "gray";
   } else {
     return alert("Already 5 players added.");
   }
