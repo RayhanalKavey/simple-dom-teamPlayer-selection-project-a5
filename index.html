@@ -78,7 +78,12 @@
               <span>Goals:36</span> Assists:120
             </p>
             <div class="card-actions justify-end">
-              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+              <button
+                class="w-3/5 mx-auto py-2 btn-primary"
+                onclick="addToSelectionBox(this)"
+              >
+                Select
+              </button>
             </div>
           </div>
         </div>
@@ -99,7 +104,12 @@
               <span>Goals:28</span> Assists:112
             </p>
             <div class="card-actions justify-end">
-              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+              <button
+                class="w-3/5 mx-auto py-2 btn-primary"
+                onclick="addToSelectionBox(this)"
+              >
+                Select
+              </button>
             </div>
           </div>
         </div>
@@ -119,7 +129,12 @@
               <span>Goals:24</span> Assists:103
             </p>
             <div class="card-actions justify-end">
-              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+              <button
+                class="w-3/5 mx-auto py-2 btn-primary"
+                onclick="addToSelectionBox(this)"
+              >
+                Select
+              </button>
             </div>
           </div>
         </div>
@@ -139,7 +154,12 @@
               <span>Goals:12</span> Assists:56
             </p>
             <div class="card-actions justify-end">
-              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+              <button
+                class="w-3/5 mx-auto py-2 btn-primary"
+                onclick="addToSelectionBox(this)"
+              >
+                Select
+              </button>
             </div>
           </div>
         </div>
@@ -160,7 +180,12 @@
               <span>Goals:31</span> Assists:119
             </p>
             <div class="card-actions justify-end">
-              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+              <button
+                class="w-3/5 mx-auto py-2 btn-primary"
+                onclick="addToSelectionBox(this)"
+              >
+                Select
+              </button>
             </div>
           </div>
         </div>
@@ -180,7 +205,12 @@
               <span>Goals:32</span> Assists:121
             </p>
             <div class="card-actions justify-end">
-              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+              <button
+                class="w-3/5 mx-auto py-2 btn-primary"
+                onclick="addToSelectionBox(this)"
+              >
+                Select
+              </button>
             </div>
           </div>
         </div>
@@ -200,7 +230,12 @@
               <span>Goals:21</span> Assists:123
             </p>
             <div class="card-actions justify-end">
-              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+              <button
+                class="w-3/5 mx-auto py-2 btn-primary"
+                onclick="addToSelectionBox(this)"
+              >
+                Select
+              </button>
             </div>
           </div>
         </div>
@@ -220,7 +255,12 @@
               <span>Goals:11</span> Assists:99
             </p>
             <div class="card-actions justify-end">
-              <button class="w-3/5 mx-auto py-2 btn-primary">Select</button>
+              <button
+                class="w-3/5 mx-auto py-2 btn-primary"
+                onclick="addToSelectionBox(this)"
+              >
+                Select
+              </button>
             </div>
           </div>
         </div>
@@ -234,7 +274,12 @@
         >
           <!-- Selected player start-->
           <div class="card-background h-96 pt-4">
-            <h2 class="text-xl mb-3">Selected-5</h2>
+            <h2 class="text-xl mb-3">
+              Selected-<span id="total-selection">0</span>
+            </h2>
+            <ol id="lists-body" class="text-start pl-12 list-decimal">
+              <!-- <li>Lionel Messi</li> -->
+            </ol>
           </div>
           <!-- Selected player end -->
 
