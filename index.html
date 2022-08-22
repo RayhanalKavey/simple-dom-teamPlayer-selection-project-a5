@@ -209,13 +209,16 @@
             </div>
             <!-- Per Player end -->
             <!-- btn -->
-            <button id="player-expenses" class="w-4/5 mx-auto py-2 btn-primary">
+            <button
+              id="player-expenses-btn"
+              class="w-4/5 mx-auto py-2 btn-primary"
+            >
               Calculate
             </button>
             <!-- Player expense start -->
             <div class="grid grid-cols-2 place-content-evenly">
               <p class="justify-self-start pl-8">Player Expenses</p>
-              <div class="">0</div>
+              <div>$<span id="player-expenses">0</span></div>
             </div>
             <!-- Player expense end -->
             <!-- Manager expense start -->
@@ -235,16 +238,17 @@
             </div>
             <!-- Coach expense end -->
             <!-- btn -->
-            <button id="total-expenses" class="w-4/5 mx-auto py-2 btn-primary">
+            <button
+              id="total-expenses-btn"
+              class="w-4/5 mx-auto py-2 btn-primary"
+              disabled
+            >
               Calculate
             </button>
             <!-- total expense start -->
-            <div
-              id="total-expenses"
-              class="grid grid-cols-2 place-content-evenly"
-            >
+            <div class="grid grid-cols-2 place-content-evenly">
               <p class="justify-self-start pl-8">Total Expenses</p>
-              <div class="">0</div>
+              <div>$<span id="total-expenses">0</span></div>
             </div>
             <!-- total expense end -->
           </div>
